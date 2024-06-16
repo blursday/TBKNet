@@ -13,8 +13,7 @@ import torch.nn as nn
 
 from tbknet.yolo.utils import LOGGER, SimpleClass, TryExcept, plt_settings
 
-#OKS_SIGMA = np.array([.26, .25, .25, .35, .35, .79, .79, .72, .72, .62, .62, 1.07, 1.07, .87, .87, .89, .89]) / 10.0
-OKS_SIGMA = np.array([.2, .2, .2, .1, .1,.2, .2, .2, .1, .1,1e-9,1e-9,1e-9,1e-9,1e-9,1e-9,1e-9]) /2  ##1121
+OKS_SIGMA = np.array([.2, .2, .2, .1, .1,.2, .2, .2, .1, .1,1e-9,1e-9,1e-9,1e-9,1e-9,1e-9,1e-9]) /2  
 #OKS_SIGMA = np.array([.2, .2, .12, .1, .1])/10
 # Boxes
 def box_area(box):
